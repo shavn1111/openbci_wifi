@@ -1,0 +1,70 @@
+{
+  "name": "openbci-wifi",
+  "version": "0.4.1",
+  "description": "The official SDK for the OpenBCI/Push The World Wifi Shield connected to either OpenBCI Cytons or Ganglions.",
+  "main": "openBCIWifi.js",
+  "scripts": {
+    "test": "semistandard | snazzy && mocha test",
+    "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && codecov"
+  },
+  "keywords": [
+    "openbci",
+    "openbci-node",
+    "ganglion",
+    "cyton",
+    "wifi"
+  ],
+  "author": "AJ Keller <aj@pushtheworld.us> (www.openbci.com)",
+  "license": "MIT",
+  "dependencies": {
+    "buffer-equal": "^1.0.0",
+    "clone": "^2.0.0",
+    "ip": "^1.1.5",
+    "lodash": "^4.16.6",
+    "node-ssdp": "^3.2.1",
+    "openbci-utilities": "^0.2.7",
+    "safe-buffer": "^5.1.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "bluebird": "3.4.6",
+    "chai": "^4.0.0",
+    "chai-as-promised": "^7.1.1",
+    "codecov": "^2.2.0",
+    "dirty-chai": "^2.0.1",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.2",
+    "sandboxed-module": "^2.0.3",
+    "semistandard": "^11.0.0",
+    "sinon": "^2.3.7",
+    "sinon-chai": "^2.11.0",
+    "snazzy": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openbci/openbci_nodejs_wifi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openbci/openbci_nodejs_wifi/issues"
+  },
+  "homepage": "https://github.com/openbci/openbci_nodejs_wifi#readme",
+  "engines": {
+    "node": ">=4"
+  },
+  "semistandard": {
+    "globals": [
+      "describe",
+      "xdescribe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect",
+      "should"
+    ]
+  }
+}
